@@ -1,0 +1,109 @@
+---
+title: "Credit Data Analysis"
+author: "Shanquala Pruitt - DAT 690 Capstone in Data Analytics"
+date: "10/13/2019"
+output:
+  ioslides_presentation: default
+  slidy_presentation: default
+  beamer_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+
+Statement of Problem:
+
+Financial crisis of 2008-2009 has exposed credit institutions approving loan applicants who ultimately default on their loans. 
+
+The credit branch has to reassess the way they evaluate applicants for bad credit risk. The stakeholder need for data analytics is crucial because of the impact it will have on applicants and the financial institution. Predictive analysis will help determine the risk based on several variables such as duration of credit and checking account status.
+
+## Data Overview
+
+- 31 variables
+- Based on a 1000 past credit applicants
+- Variable types consist of numerical, categorical, and binary.
+- Target variable is "DEFAULT" (defaulted on a loan)
+
+
+## Topics
+
+>- Pilot Evaluation
+>- Plan Modification
+>- Plan Implementation and Results
+>- Conclusions and Implications
+>- Recommendations
+
+# Pilot Evaluation
+
+## Successes and Challenges of Pilot
+
+* Challenges
+  + Some of the challenges from the pilot was making use of the information given as well as seeking other outside sources to expand on the data available. 
+  + Understanding variable importance for analysis
+  +converting numeric variables to categorical
+  
+* Successes
+  + Having the data produce results
+  
+* Areas of concern
+  + Are results from the pilot run valid?
+  
+## Pilot Evaluation Continued...
+
+- The pilot run of the credit data indicates there is a 66% chance the random forest model can predict correctly which applicants will default if given a loan.
+- After evaluating the random forest model's performance from pilot, it is shown that the model has a 78% accuracy based on the area under the curve. Which is above the bench mark curve.    
+  
+## Pilot Evaluation Continued...
+
+```{r, out.width = "600px"}
+knitr::include_graphics("C:/Users/shank/Documents/DAT 690/ROC_AUC for Pilot.png")
+```
+
+# Plan Modification
+
+## Data Analytic Architecture Pattern
+
+```{r, out.width = "600px"}
+knitr::include_graphics("C:/Users/shank/Documents/DAT 690/visio_flowchart.png")
+```
+
+## Data Analytic Architecture Pattern Continued...
+
+>- Data quality
+>- Integrity
+>- Security of information
+
+## Data Quality
+
+Data quality can be categorized based on the usability, reliability, and completeness of the dataset.Missing data was evaluated through the Rattle interface within the R program. The target variable and identifier variable was clearly identified upon loading data. The quality of the data did not seem to be an issue from the initial loading of data. 
+
+## Integrity
+
+The integrity of the data was brought into question after transforming the necessary variables from numeric to categorical. 
+
+## Security of Information
+
+
+
+# Plan Implementation and Results
+
+## Plan Implementation and Results Continued...
+
+Link to Implementation found here:
+
+[link](file:///C:/Users/shank/Documents/DAT%20690/Credit-Data_script_revised.html)
+
+
+## Conclusions and Implications
+
+In conclusion, based on the model performance being 83% accuracy for the validation data set and 77% for the test data set the random forest model is a good fit for predicting which applicants will default on their loan. Having this knowledge has the potential to cut costs dramatically for the financial institutions. This will also eliminate the repeat of the 2008-2009 financial crisis by making it easier to determine defaults in potential applicants.
+
+
+# Recommendations
+
+
+
+
